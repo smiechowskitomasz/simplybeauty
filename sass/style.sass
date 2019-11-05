@@ -1,0 +1,316 @@
+=header1()
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 80px
+  line-height: 80px
+  color: #000000
+=header2()
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 32px
+  line-height: 40px
+  color: #000000
+=header3()
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 40px
+  line-height: 50px
+=paragraph1()
+  font-family: Poppins
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 28px
+  color: rgba(0, 0, 0, 0.5)
+
+body
+  font-family: 'Poppins', sans-serif
+  margin: 0 3%
+  padding: 0
+  box-sizing: border-box
+.header1
+  display: flex
+  justify-content: center
+  margin: 5vh 0
+
+.header
+  text-align: center
+  margin: 0 7%
+  background-color: #EBCBD6
+  overflow-y: hidden
+
+svg.woman
+  width: 350px
+  transform: translateY(15px)
+  overflow: hidden
+
+nav
+  margin: 0 3%
+  text-decoration: none
+
+ul
+  display: flex
+  flex-direction: row
+  font-size: 12px
+  list-style: none
+  flex-shrink: 1
+  width: 100%
+  padding: 0
+  transform: translateY(5vh)
+  li
+    padding: 8px
+    cursor: pointer
+    flex-grow: 1
+    a
+      text-decoration: none
+      color: #824C5F
+.header div
+  transform: translateY(15vh)
+  display: flex
+  flex-direction: column
+  align-items: center
+  h2
+    +header1()
+  span
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 30px
+    color: rgba(0, 0, 0, 0.5)
+
+.lineheight
+  margin: 100px 0
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  width: 100%
+  .lineheight1b
+    margin: 0 5%
+  h3
+    +header2()
+  span
+    +paragraph1()
+  .lineheight2
+    display: flex
+    flex-direction: column
+  .linegieght2a
+    flex-basis: 30%
+    margin-right: 5%
+  .linegieght2b
+    flex-basis: 70%
+    background: #9ADCFA
+    border: 1px solid #9ADCFA
+    box-sizing: border-box
+    position: relative
+    flex-direction: row
+    .leg
+      width: 500%
+      height: auto
+      position: relative
+      left: 0
+      top: 0
+    .flex
+      display: flex
+      margin: 6vh  5%
+      min-height: 120vh
+      flex-direction: column
+      justify-content: center
+      align-self: center
+      // align-items: center
+      // .logo
+      //   display: flex
+      //   align-self: center
+.lineheight:last-child
+  border-bottom: 1px solid rgba(0, 0, 0, .1)
+  margin-bottom: 0
+  padding-bottom: 100px
+
+.sekcja2
+  margin: 35vh 0 15vh 0
+
+h4
+  margin: 0 0 10vh 0
+  text-align: center
+  position: relative
+  +header1()
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: #EBCBD6
+    top: -60px
+    left: 0
+    right: 0
+    margin: auto
+.wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+.menuRzesy
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.menu
+
+  flex-basis: 28%
+
+  h5
+    +header2()
+  p
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    +paragraph1()
+  span
+    font-family: Poppins
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 24px
+    color: #000
+
+.rzesyDopisek p
+  font-family: Poppins
+  font-style: normal
+  font-weight: normal
+  font-size: 10px
+  line-height: 15px
+  color: #000
+.pseudoelement
+  position: relative
+  &::before, &::after
+    content: ''
+    display: block
+    height: 100%
+    position: absolute
+    // border-left: 2px solid #000
+    // top: 0
+    // left: -10%
+  &::before
+    border-left: 2px solid rgba(0, 0, 0, 0.1)
+    top: 0
+    left: -10%
+  &::after
+    border-right: 2px solid rgba(0, 0, 0, 0.1)
+    top: 0
+    right: -10%
+.sekcja3 div
+  margin: 0 7%
+  text-align: center
+  background-color: #EBCBD6
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  position: relative
+
+  svg
+    position: absolute
+    top: 100px
+
+  h6,h7
+    +header3()
+  h6
+    margin-top: 45vh
+    position: relative
+  h7
+    text-decoration: underline
+    margin-bottom: 10%
+  p
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 30px
+    color: rgba(0, 0, 0, 0.5)
+
+  .button
+    display: inline-block
+    button
+      width: 164px
+      height: 55px
+      background-color: white
+      text-transform: uppercase
+      border: none
+      margin: 5px
+      font-family: Poppins
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 21px
+      color: rgba(0, 0, 0, 0.5)
+      cursor: pointer
+      &:hover
+        color: #000
+  .costam
+    display: block
+    // margin: 10% 0
+    width: 80%
+    &::before
+      content: ''
+
+    a
+      text-decoration: none
+      color: rgba(0, 0, 0, 0.5)
+      &:hover
+        color: #000000
+@media( max-width: 1024px)
+  body
+    margin: 0 3%
+  .header
+    margin: 0
+  h4
+    margin: 0
+  .lineheight
+    flex-direction: column
+    &:first-child
+      margin-bottom: 0
+    &:last-child
+      margin-top: 0
+    .lineheight1b
+      margin: 0
+    .linegieght2a
+      margin: 0
+    h3
+      text-align: center
+    .headerblue
+      text-align: left
+  .wrapper
+    flex-direction: column
+    span, p
+      line-height: 12px
+  .sekcja3 div
+    margin: 0
+    h6,h7
+      font-size: 24px
+      line-height: 24px
+    h6
+      margin-top: 45vh
+  .svg1, .svg2, .svg3, .svg4
+    position: relative
+
+    svg
+      // position: absolute
+      // top: -10vh
+      // right: 0
+      // left: 0
+      // margin: 0 auto
+      display: block
+      margin: 5vh auto 0 auto
+      left: 0
+      right: 0
+
+  .pseudoelement
+    &::before, &::after
+      display: none
+@media( max-width: 640px)
+  nav
+    display: none
